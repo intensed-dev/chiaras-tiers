@@ -1,28 +1,84 @@
 {
   "users": [
     {
-      "username": "TestAccount",
-      "points": 999999
-    },
-    {
-      "username": "_Intense",
-      "points": 0
+      "username": "Intense",
+      "categories": {
+        "categoryA": 500,
+        "categoryB": 100,
+        "categoryC": 250
+      }
     },
     {
       "username": "ThatCuteOne",
-      "points": 0
+      "categories": {
+        "categoryA": 300,
+        "categoryB": 800,
+        "categoryC": 50
+      }
     },
     {
-      "username": "ru_bl",
-      "points": 0
+      "username": "Nelor",
+      "categories": {
+        "categoryA": 450,
+        "categoryB": 300,
+        "categoryC": 200
+      }
     },
     {
-      "username": "AstroTheCat",
-      "points": 0
+      "username": "CoffeeDev",
+      "categories": {
+        "categoryA": 150,
+        "categoryB": 600,
+        "categoryC": 100
+      }
     },
     {
-      "username": "Nadir_El",
-      "points": 0
+      "username": "Kryphic",
+      "categories": {
+        "categoryA": 400,
+        "categoryB": 250,
+        "categoryC": 175
+      }
+    },
+    {
+      "username": "Tuubaa",
+      "categories": {
+        "categoryA": 200,
+        "categoryB": 350,
+        "categoryC": 125
+      }
+    },
+    {
+      "username": "EinHolzkopf",
+      "categories": {
+        "categoryA": 100,
+        "categoryB": 450,
+        "categoryC": 75
+      }
+    },
+    {
+      "username": "PlayerOne",
+      "categories": {
+        "categoryA": 250,
+        "categoryB": 200,
+        "categoryC": 300
+      }
+    },
+    {
+      "username": "PixelDev",
+      "categories": {
+        "categoryA": 175,
+        "categoryB": 275,
+        "categoryC": 150
+      }
+    },
+    {
+      "username": "Redstone",
+      "categories": {
+        "categoryA": 125,
+        "categoryB": 225,
+        "categoryC": 100
+      }
     }
   ],
   "leaderboards": [
@@ -30,25 +86,25 @@
       "id": "overall",
       "name": "Overall",
       "icon": "trophy",
-      "description": "All points counted together"
+      "description": "Combined points from every category."
     },
     {
-      "id": "commingsoon_1",
-      "name": "Comming soon",
-      "icon": "calendar-days",
-      "description": "Comming soon"
+      "id": "categoryA",
+      "name": "Category A",
+      "icon": "swords",
+      "description": "Points earned in Category A."
     },
     {
-      "id": "commingsoon_2",
-      "name": "Comming soon",
-      "icon": "calendar-days",
-      "description": "Comming soon"
+      "id": "categoryB",
+      "name": "Category B",
+      "icon": "gem",
+      "description": "Points earned in Category B."
     },
     {
-      "id": "commingsoon_3",
-      "name": "Comming soon",
-      "icon": "calendar-days",
-      "description": "Comming soon"
+      "id": "categoryC",
+      "name": "Category C",
+      "icon": "star",
+      "description": "Points earned in Category C."
     }
   ]
 }
