@@ -351,6 +351,9 @@
           rank === 2 ? "silver" :
           rank === 3 ? "bronze" : "";
 
+        const userImageUrl =
+          encodeURIComponent(user.username) === "Test Account" ? "test-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
+
         return `
           <article class="row">
             <div class="rank ${rank <= 3 ? "top" : ""} ${medalClass}">
@@ -360,7 +363,7 @@
             <div class="user">
               <img
                 class="avatar"
-                src="https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256"
+                src="${userImageUrl}"
                 alt=""
                 loading="lazy"
                 onerror="this.style.visibility='hidden'"
