@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Eine moderne Punkte-Rangliste." />
-  <title>Rankings</title>
+  <title>Chiara's Tiers</title>
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     :root {
@@ -118,16 +118,16 @@
 <body>
   <main class="shell">
     <header>
-      <div class="eyebrow"><i data-lucide="bar-chart-3" size="15"></i> Punkte-Ranglisten</div>
+      <div class="eyebrow"><i data-lucide="bar-chart-3" size="15"></i> Tierlist</div>
       <h1>Rankings</h1>
-      <p class="subtitle">Wer sammelt die meisten Punkte?</p>
+      <p class="subtitle">Ranklist for Chiara's Tiers on sujuxi smp</p>
     </header>
 
-    <nav id="tabs" class="tabs" aria-label="Ranglisten"></nav>
+    <nav id="tabs" class="tabs" aria-label="Ranklists"></nav>
 
     <section class="meta">
       <div>
-        <h2 id="board-title">Gesamt</h2>
+        <h2 id="board-title">Overall</h2>
         <p id="board-description"></p>
       </div>
       <div class="count" id="user-count"></div>
@@ -140,11 +140,11 @@
     let data;
     let activeBoard = "overall";
 
-    const number = new Intl.NumberFormat("de-DE");
+    const number = new Intl.NumberFormat("en-US");
 
     async function loadData() {
       const response = await fetch("./data.json");
-      if (!response.ok) throw new Error("data.json konnte nicht geladen werden.");
+      if (!response.ok) throw new Error("data.json couldn't be loaded.");
       data = await response.json();
       renderTabs();
       renderBoard(activeBoard);
@@ -182,7 +182,7 @@
       const users = [...data.users].sort((a, b) => b.points - a.points);
 
       if (!users.length) {
-        board.innerHTML = `<div class="empty">Noch keine Nutzer vorhanden.</div>`;
+        board.innerHTML = `<div class="empty">Sorry, there aren't any users.</div>`;
         return;
       }
 
@@ -202,12 +202,12 @@
               />
               <div>
                 <div class="username">${escapeHtml(user.username)}</div>
-                <div class="label">Rang #${rank}</div>
+                <div class="label">Tier #${rank}</div>
               </div>
             </div>
             <div class="points">
               <strong>${number.format(user.points)}</strong>
-              <span>Punkte</span>
+              <span>Points</span>
             </div>
           </article>
         `;
