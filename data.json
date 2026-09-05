@@ -1,70 +1,54 @@
 {
   "users": [
     {
-      "username": "Intense",
-      "points": 18420
+      "username": "TestAccount",
+      "points": 999999
+    },
+    {
+      "username": "_Intense",
+      "points": 0
     },
     {
       "username": "ThatCuteOne",
-      "points": 17280
+      "points": 0
     },
     {
-      "username": "Nelor",
-      "points": 15890
+      "username": "ru_bl",
+      "points": 0
     },
     {
-      "username": "CoffeeDev",
-      "points": 14320
+      "username": "AstroTheCat",
+      "points": 0
     },
     {
-      "username": "Kryphic",
-      "points": 12950
-    },
-    {
-      "username": "Tuubaa",
-      "points": 11740
-    },
-    {
-      "username": "EinHolzkopf",
-      "points": 10980
-    },
-    {
-      "username": "PlayerOne",
-      "points": 9820
-    },
-    {
-      "username": "PixelDev",
-      "points": 8640
-    },
-    {
-      "username": "Redstone",
-      "points": 7310
+      "username": "Nadir_El",
+      "points": 0
     }
   ],
   "leaderboards": [
     {
       "id": "overall",
-      "name": "Gesamt",
+      "name": "Overall",
       "icon": "trophy",
-      "description": "Alle Punkte über alle Kategorien hinweg."
+      "description": "All points counted together"
     },
     {
-      "id": "weekly",
-      "name": "Wöchentlich",
+      "id": "commingsoon_1",
+      "name": "Comming soon",
       "icon": "calendar-days",
-      "description": "Punkte der aktuellen Woche."
+      "description": "Comming soon"
     },
     {
-      "id": "monthly",
-      "name": "Monatlich",
-      "icon": "calendar-range",
-      "description": "Punkte des aktuellen Monats."
+      "id": "commingsoon_2",
+      "name": "Comming soon",
+      "icon": "calendar-days",
+      "description": "Comming soon"
     },
     {
-      "id": "streak",
-      "name": "Streak",
-      "icon": "flame",
-      "description": "Rangliste nach Streak-Punkten."
+      "id": "commingsoon_3",
+      "name": "Comming soon",
+      "icon": "calendar-days",
+      "description": "Comming soon"
     }
   ]
 }
