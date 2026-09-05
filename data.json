@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "username": "Test Account",
+      "username": "Moderator",
       "nickname": "Test Account",
       "moderator": true,
       "categories": {
@@ -48,7 +48,7 @@
       }
     },
     {
-      "username": "Nadir_El",
+      "username": "Nadir_E",
       "nickname": "Nadir",
       "categories": {
         "categoryA": 0,
