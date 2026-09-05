@@ -3,6 +3,7 @@
     {
       "username": "Test Account",
       "nickname": "Test Account",
+      "moderator": true,
       "categories": {
         "categoryA": 999999,
         "categoryB": 999999,
@@ -21,6 +22,7 @@
     {
       "username": "_Intense",
       "nickname": "Chiara",
+      "admin": true,
       "categories": {
         "categoryA": 0,
         "categoryB": 0,
