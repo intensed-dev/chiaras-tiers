@@ -25,6 +25,8 @@
       --accent: #a78bfa;
       --accent-soft: rgba(167,139,250,.12);
       --gold: #f5c451;
+      --verified: #51f57d;
+      --moderator: #f55151;
       --silver: #b9c1cc;
       --bronze: #d99462;
     }
@@ -176,6 +178,10 @@
     .rank.gold { color: var(--gold); }
     .rank.silver { color: var(--silver); }
     .rank.bronze { color: var(--bronze); }
+
+    .badge.admin { color: var(--gold); }
+    .badge.verified { color: var(--verified); }
+    .badge.moderator { color: var(--moderator); }
 
     .user {
       display: flex;
@@ -352,7 +358,13 @@
           rank === 3 ? "bronze" : "";
 
         const userImageUrl =
-          user.username === "Test Account" ? "test-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
+          user.username === "Test Account" ? "test-big.png" :
+          user.username === "Unknown" ? "unknown-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
+        
+        const userBadges =
+          user.admin == true ? `<i data-lucide="crown" class="badge admin" size="15"></i> <i data-lucide="badge-check" class="badge verified" size="15"></i>` :
+          user.moderator == true ? `<i data-lucide="gavel" class="badge moderator" size="15"></i>` :
+          user.verified == true ? `<i data-lucide="badge-check" class="badge verified" size="15"></i>` : ``;
 
         return `
           <article class="row">
@@ -370,7 +382,7 @@
               />
 
               <div>
-                <div class="username">${escapeHtml(user.nickname)}</div>
+                <div class="username">${escapeHtml(user.nickname)} ${userBadges}</div>
                 <div class="label">#${rank} • ${escapeHtml(user.username)}</div>
               </div>
             </div>
