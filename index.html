@@ -361,8 +361,8 @@
           rank === 3 ? "bronze" : "";
 
         const userImageUrl =
-          user.test-img === true ? "test-big.png" :
-          user.unknown-img === true ? "unknown-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
+          user.image === "test" ? "test-big.png" :
+          user.image === "unknown" ? "unknown-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
         
         const userBadges =
           user.admin == true ? `<i data-lucide="crown" class="badge admin" size="12"></i> <i data-lucide="badge-check" class="badge verified" size="12"></i>` :
