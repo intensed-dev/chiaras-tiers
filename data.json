@@ -4,7 +4,7 @@
       "username": "Test Account",
       "nickname": "Moderator",
       "moderator": true,
-      "test-img": true,
+      "image": "test",
       "categories": {
         "categoryA": 999999,
         "categoryB": 999999,
