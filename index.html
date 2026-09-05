@@ -27,6 +27,7 @@
       --gold: #f5c451;
       --verified: #51f57d;
       --moderator: #f55151;
+      --bot: #51c7f5;
       --silver: #b9c1cc;
       --bronze: #d99462;
     }
@@ -182,6 +183,7 @@
     .badge.admin { color: var(--gold); }
     .badge.verified { color: var(--verified); }
     .badge.moderator { color: var(--moderator); }
+    .badge.bot { color: var(--bot); }
 
     .user {
       display: flex;
@@ -362,9 +364,10 @@
           user.username === "Unknown" ? "unknown-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
         
         const userBadges =
-          user.admin == true ? `<i data-lucide="crown" class="badge admin" size="15"></i> <i data-lucide="badge-check" class="badge verified" size="15"></i>` :
-          user.moderator == true ? `<i data-lucide="gavel" class="badge moderator" size="15"></i>` :
-          user.verified == true ? `<i data-lucide="badge-check" class="badge verified" size="15"></i>` : ``;
+          user.admin == true ? `<i data-lucide="crown" class="badge admin" size="12"></i> <i data-lucide="badge-check" class="badge verified" size="12"></i>` :
+          user.moderator == true ? `<i data-lucide="gavel" class="badge moderator" size="12"></i> <i data-lucide="badge-check" class="badge verified" size="12"></i>` :
+          user.bot == true ? `<i data-lucide="bot" class="badge bot" size="12"></i> <i data-lucide="badge-check" class="badge verified" size="12"></i>` :
+          user.verified == true ? `<i data-lucide="badge-check" class="badge verified" size="12"></i>` : ``;
 
         return `
           <article class="row">
