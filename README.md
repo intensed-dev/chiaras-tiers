@@ -1,24 +1,56 @@
-# Ranglisten-Website
+# Points Leaderboard
 
-## Dateien
+A simple static leaderboard website using a JSON data file.
 
-- `index.html` – komplette Website
-- `data.json` – Nutzer, Punkte und Ranglisten-Konfiguration
+## Data structure
 
-## Daten ändern
-
-In `data.json` können Nutzer ergänzt oder Punkte geändert werden:
+Each user has points separated by category:
 
 ```json
 {
-  "users": [
-    { "username": "Spieler", "points": 12345 }
-  ]
+  "username": "User1",
+  "categories": {
+    "categoryA": 500,
+    "categoryB": 100
+  }
 }
 ```
 
-Neue Tabs werden ebenfalls über `leaderboards` angelegt. Für `icon` können Lucide-Icon-Namen verwendet werden.
+The **Overall** leaderboard automatically adds every category:
 
-Die Profilbilder werden automatisch über
+`500 + 100 = 600 points`
+
+You do not need to store overall points separately.
+
+## Adding a category
+
+Add the category to each user's `categories` object:
+
+```json
+"categoryC": 250
+```
+
+Then add a leaderboard entry:
+
+```json
+{
+  "id": "categoryC",
+  "name": "Category C",
+  "icon": "star",
+  "description": "Points earned in Category C."
+}
+```
+
+The tab and its ranking will be generated automatically.
+
+## Profile images
+
+Minecraft profile heads are loaded from:
+
 `https://render.crafty.gg/2d/head/USERNAME?size=256`
-geladen.
+
+## Running locally
+
+Because the website loads `data.json` with `fetch()`, serve the folder through a local web server instead of opening `index.html` directly.
+
+For GitHub Pages, no build step is required.
