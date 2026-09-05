@@ -352,7 +352,7 @@
           rank === 3 ? "bronze" : "";
 
         const userImageUrl =
-          encodeURIComponent(user.username) === "Test Account" ? "test-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
+          user.username === "Test Account" ? "test-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
 
         return `
           <article class="row">
