@@ -180,7 +180,7 @@
     .rank.silver { color: var(--silver); }
     .rank.bronze { color: var(--bronze); }
 
-    .badge { font-size: 14px; vertical-align: middle; size: 14px; width: 14px; height: 14px; }
+    .badge { font-size: 8px; vertical-align: middle; size: 8px; width: 8px; height: 8px; }
     .badge.admin { color: var(--gold); }
     .badge.verified { color: var(--verified); }
     .badge.moderator { color: var(--moderator); }
@@ -361,8 +361,8 @@
           rank === 3 ? "bronze" : "";
 
         const userImageUrl =
-          user.username === "Test Account" ? "test-big.png" :
-          user.username === "Unknown" ? "unknown-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
+          user.test-img === true ? "test-big.png" :
+          user.unknown-img === true ? "unknown-big.png" : `https://render.crafty.gg/2d/head/${encodeURIComponent(user.username)}?size=256`;
         
         const userBadges =
           user.admin == true ? `<i data-lucide="crown" class="badge admin" size="12"></i> <i data-lucide="badge-check" class="badge verified" size="12"></i>` :
