@@ -1,83 +1,51 @@
 {
   "users": [
     {
-      "username": "Intense",
+      "username": "Test Account",
       "categories": {
-        "categoryA": 500,
-        "categoryB": 100,
-        "categoryC": 250
+        "categoryA": 999999,
+        "categoryB": 999999,
+        "categoryC": 999999
       }
     },
     {
       "username": "ThatCuteOne",
       "categories": {
-        "categoryA": 300,
-        "categoryB": 800,
-        "categoryC": 50
+        "categoryA": 0,
+        "categoryB": 0,
+        "categoryC": 0
       }
     },
     {
-      "username": "Nelor",
+      "username": "_Intense",
       "categories": {
-        "categoryA": 450,
-        "categoryB": 300,
-        "categoryC": 200
+        "categoryA": 0,
+        "categoryB": 0,
+        "categoryC": 0
       }
     },
     {
-      "username": "CoffeeDev",
+      "username": "ru_bl",
       "categories": {
-        "categoryA": 150,
-        "categoryB": 600,
-        "categoryC": 100
+        "categoryA": 0,
+        "categoryB": 0,
+        "categoryC": 0
       }
     },
     {
-      "username": "Kryphic",
+      "username": "AstroTheCat",
       "categories": {
-        "categoryA": 400,
-        "categoryB": 250,
-        "categoryC": 175
+        "categoryA": 0,
+        "categoryB": 0,
+        "categoryC": 0
       }
     },
     {
-      "username": "Tuubaa",
+      "username": "Nadir_El",
       "categories": {
-        "categoryA": 200,
-        "categoryB": 350,
-        "categoryC": 125
-      }
-    },
-    {
-      "username": "EinHolzkopf",
-      "categories": {
-        "categoryA": 100,
-        "categoryB": 450,
-        "categoryC": 75
-      }
-    },
-    {
-      "username": "PlayerOne",
-      "categories": {
-        "categoryA": 250,
-        "categoryB": 200,
-        "categoryC": 300
-      }
-    },
-    {
-      "username": "PixelDev",
-      "categories": {
-        "categoryA": 175,
-        "categoryB": 275,
-        "categoryC": 150
-      }
-    },
-    {
-      "username": "Redstone",
-      "categories": {
-        "categoryA": 125,
-        "categoryB": 225,
-        "categoryC": 100
+        "categoryA": 0,
+        "categoryB": 0,
+        "categoryC": 0
       }
     }
   ],
