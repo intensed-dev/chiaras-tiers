@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "username": "Moderator",
-      "nickname": "Test Account",
+      "username": "Test Account",
+      "nickname": "Moderator",
       "moderator": true,
       "categories": {
         "categoryA": 999999,
