@@ -6,18 +6,18 @@
       "moderator": true,
       "image": "test",
       "categories": {
-        "categoryA": 999999,
-        "categoryB": 999999,
-        "categoryC": 999999
+        "skill": 999999,
+        "aura": 999999,
+        "helpful": 999999
       }
     },
     {
       "username": "ThatCuteOne",
       "nickname": "Cute",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 10,
+        "helpful": 0
       }
     },
     {
@@ -25,81 +25,81 @@
       "nickname": "Chiara",
       "admin": true,
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     },
     {
       "username": "ru_bl",
       "nickname": "rubl",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 10,
+        "aura": 0,
+        "helpful": 10
       }
     },
     {
       "username": "AstroTheCat",
       "nickname": "Astro",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     },
     {
       "username": "Nadir_E",
       "nickname": "Nadir",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     },
     {
       "username": "Schwitzjamin",
       "nickname": "Schwitzjamin",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     },
     {
       "username": "Lyne100",
       "nickname": "Lyne",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     },
     {
       "username": "Okti3",
       "nickname": "Okti",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     },
     {
       "username": "ThatMort",
       "nickname": "ThatMort",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     },
     {
       "username": "ItalianTradWife",
       "nickname": "ItalianTradWife",
       "categories": {
-        "categoryA": 0,
-        "categoryB": 0,
-        "categoryC": 0
+        "skill": 0,
+        "aura": 0,
+        "helpful": 0
       }
     }
   ],
@@ -111,22 +111,22 @@
       "description": "Combined points from every category."
     },
     {
-      "id": "categoryA",
-      "name": "Category A",
-      "icon": "swords",
-      "description": "Points earned in Category A."
+      "id": "skill",
+      "name": "Skill",
+      "icon": "zap",
+      "description": "Points earned from Skill"
     },
     {
-      "id": "categoryB",
-      "name": "Category B",
-      "icon": "gem",
-      "description": "Points earned in Category B."
+      "id": "aura",
+      "name": "Aura",
+      "icon": "sparkles",
+      "description": "Points earned by having AURA idk"
     },
     {
-      "id": "categoryC",
-      "name": "Category C",
-      "icon": "star",
-      "description": "Points earned in Category C."
+      "id": "helpful",
+      "name": "Helpful",
+      "icon": "users",
+      "description": "Points earned by being helpful."
     }
   ]
 }
